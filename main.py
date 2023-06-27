@@ -35,11 +35,11 @@ def main():
     logger.set_log_name("tar_gz")
     while True:
         int_sum+=1
-        logger.info("logger",int_sum)
-        logger.debug("debug","test")
-        logger.warning("warning","hello")
-        logger.error("error","error")
-        logger.critical("critical_","critical")
+        logger.info("logger={}"format(int_sum))
+        logger.debug("debug={}".format("test"))
+        logger.warning("warning={}".format("hello"))
+        logger.error("error={}".format("error"))
+        logger.critical("critical_={}".format("critical"))
         time.sleep(3)
 if __name__=="__main__":
     main()
